@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 yarn add axios @tanstack/react-query js-cookie geist react-icons react-redux redux-persist sass
 
-yarn add -D
+yarn add -D @trivago/prettier-plugin-sort-imports prettier @types/js-cookie
