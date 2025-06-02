@@ -33,7 +33,14 @@ export const cartSlice = createSlice({
 		) => {
 			const { id, type } = action.payload
 			const item = state.items.find(item => item.id === id)
-			if (item) type === 'plus' ? item.quantity++ : item.quantity--
+			// if (item) type === 'plus' ? item.quantity++ : item.quantity--
+			if (item) {
+				if (type === 'plus') {
+					item.quantity++
+				} else {
+					item.quantity--
+				}
+			}
 		},
 		reset: state => {
 			state.items = []
