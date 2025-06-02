@@ -65,5 +65,4 @@ export const store = configureStore({
 })
 
 // persistor should only be created on the client side
-export const persistor =
-	typeof window !== 'undefined' ? persistStore(store) : null // Or handle null appropriately if you use it in components
+export const persistor = persistStore(store)
