@@ -5,7 +5,7 @@ import { API_URL } from '@/config/api.config'
 import {
 	IMainStatistics,
 	IMiddleStatistics
-} from '@/shared/types/statistics.interface'
+} from '@/shared/domain/entities/statistics.interface'
 
 class StatisticsService {
 	async getMain(storeId: string) {

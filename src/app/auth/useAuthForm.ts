@@ -7,7 +7,7 @@ import { DASHBOARD_URL } from '@/config/url.config'
 
 import { authService } from '@/services/auth/auth.service'
 
-import { IAuthForm } from '@/shared/types/auth.interface'
+import { IAuthForm } from '@/shared/domain/entities/auth.interface'
 
 export function useAuthForm(isReg: boolean) {
 	const router = useRouter()

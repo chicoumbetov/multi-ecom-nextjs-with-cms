@@ -2,7 +2,7 @@ import { axiosClassic, axiosWithAuth } from '@/api/api.interceptors'
 
 import { API_URL } from '@/config/api.config'
 
-import { ICategory, ICategoryInput } from '@/shared/types/category.interface'
+import { ICategory, ICategoryInput } from '@/shared/domain/entities/category.interface'
 
 class CategoryService {
 	async getByStoreId(id: string) {

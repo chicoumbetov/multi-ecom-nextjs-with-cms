@@ -8,8 +8,8 @@ import {
 } from '@/presentation/components/ui/form-elements/Form';
 import { Input } from '@/presentation/components/ui/form-elements/Input';
 
+import { IAuthForm } from '@/shared/domain/entities/auth.interface';
 import { validEmail } from '@/shared/regex';
-import { IAuthForm } from '@/shared/types/auth.interface';
 
 interface AuthFieldsProps {
 	form: { control: Control<IAuthForm> } // UseFormReturn<IAuthForm, unknown>

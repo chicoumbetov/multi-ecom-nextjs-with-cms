@@ -6,7 +6,7 @@ import {
 	IStore,
 	IStoreCreate,
 	IStoreEdit
-} from '@/shared/types/store.interface'
+} from '@/shared/domain/entities/store.interface'
 
 class StoreService {
 	async getById(id: string) {

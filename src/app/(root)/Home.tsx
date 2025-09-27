@@ -2,7 +2,7 @@ import { Catalog } from '@/presentation/components/ui/catalog/Catalog'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { IProduct } from '@/shared/types/product.interface'
+import { IProduct } from '@/shared/domain/entities/product.interface'
 
 import { Hero } from './hero/Hero'
 

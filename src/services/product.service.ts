@@ -2,7 +2,7 @@ import { axiosClassic, axiosWithAuth } from '@/api/api.interceptors'
 
 import { API_URL } from '@/config/api.config'
 
-import { IProduct, IProductInput } from '@/shared/types/product.interface'
+import { IProduct, IProductInput } from '@/shared/domain/entities/product.interface'
 
 class ProductService {
 	async getAll(searchTerm?: string | null) {

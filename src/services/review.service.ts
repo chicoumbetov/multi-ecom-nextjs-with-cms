@@ -2,7 +2,7 @@ import { axiosWithAuth } from '@/api/api.interceptors'
 
 import { API_URL } from '@/config/api.config'
 
-import { IReview, IReviewInput } from '@/shared/types/review.interface'
+import { IReview, IReviewInput } from '@/shared/domain/entities/review.interface'
 
 class ReviewService {
 	async getByStoreId(id: string) {
