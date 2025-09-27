@@ -1,4 +1,4 @@
-import { axiosClassic } from '@/api/api.interceptors'
+import { axiosClassic } from '@/shared/infrastructure/api/api.interceptors'
 
 import { API_URL } from '@/config/api.config'
 
