@@ -28,7 +28,7 @@ export function Catalog({
 							<ProductCard key={product.id} product={product} />
 						))
 					) : (
-						<div>Нечего не найдено</div>
+						<div>Ничего не найдено</div>
 					)}
 				</div>
 			</div>
