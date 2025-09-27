@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 
-import { persistor, store } from '@/store/store'
+import { persistor, store } from '@/application/store/store'
 
 export function Providers({ children }: PropsWithChildren) {
 	const [client] = useState(
