@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query'
-import { ChangeEvent, useMemo, useRef } from 'react'
+import { ChangeEvent, useCallback, useMemo, useRef } from 'react'
 import toast from 'react-hot-toast'
 
 import { fileService } from '@/services/file.service'
@@ -18,7 +18,7 @@ export function useUpload(onChange: (value: string[]) => void) {
 		}
 	})
 
-	const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+	const handleFileChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
 		const selectedFiles = event.target.files
 
 		if (selectedFiles) {
@@ -29,7 +29,7 @@ export function useUpload(onChange: (value: string[]) => void) {
 
 			uploadFiles(formData)
 		}
-	}
+	}, [])
 
 	const handleButtonClick = () => {
 		fileInputRef.current?.click()
