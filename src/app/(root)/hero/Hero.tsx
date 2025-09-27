@@ -5,7 +5,7 @@ import { Button } from '@/presentation/components/ui/Button'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { SITE_DESCRIPTION } from '@/constants/seo.constants'
+import { SITE_DESCRIPTION } from '@/presentation/constants/seo.constants'
 
 import styles from './Hero.module.scss'
 

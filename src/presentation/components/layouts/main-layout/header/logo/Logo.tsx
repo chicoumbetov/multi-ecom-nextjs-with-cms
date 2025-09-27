@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { SITE_NAME } from '@/constants/seo.constants'
+import { SITE_NAME } from '@/presentation/constants/seo.constants'
 
 import styles from './Logo.module.scss'
 

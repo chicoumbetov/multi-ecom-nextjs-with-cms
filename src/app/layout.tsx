@@ -1,7 +1,7 @@
 import { GeistSans } from 'geist/font/sans'
 import type { Metadata } from 'next'
 
-import { SITE_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
+import { SITE_DESCRIPTION, SITE_NAME } from '@/presentation/constants/seo.constants'
 
 import './globals.css'
 import { Providers } from './providers'
