@@ -4,7 +4,7 @@ import { Rating } from 'react-simple-star-rating'
 
 import { useCreateReview } from '@/application/hooks/queries/reviews/useCreateReview'
 
-import { IReviewInput } from '@/shared/types/review.interface'
+import { IReviewInput } from '@/shared/domain/entities/review.interface'
 
 import { Button } from '../Button'
 import {

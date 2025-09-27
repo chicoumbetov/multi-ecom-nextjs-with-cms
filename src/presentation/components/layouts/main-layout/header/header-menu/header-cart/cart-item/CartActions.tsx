@@ -5,7 +5,7 @@ import { Button } from '@/presentation/components/ui/Button'
 import { useActions } from '@/application/hooks/useActions'
 import { useCart } from '@/application/hooks/useCart'
 
-import { ICartItem } from '@/shared/types/cart.interface'
+import { ICartItem } from '@/shared/domain/entities/cart.interface'
 
 import styles from '../HeaderCart.module.scss'
 

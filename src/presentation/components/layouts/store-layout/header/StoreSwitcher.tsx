@@ -6,24 +6,24 @@ import { useState } from 'react'
 
 import { Button } from '@/presentation/components/ui/Button'
 import {
-    Command,
-    CommandEmpty,
-    CommandGroup,
-    CommandInput,
-    CommandItem,
-    CommandList,
-    CommandSeparator
+	Command,
+	CommandEmpty,
+	CommandGroup,
+	CommandInput,
+	CommandItem,
+	CommandList,
+	CommandSeparator
 } from '@/presentation/components/ui/Command'
 import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger
+	Popover,
+	PopoverContent,
+	PopoverTrigger
 } from '@/presentation/components/ui/Popover'
 import { CreateStoreModal } from '@/presentation/components/ui/modals/CreateStoreModal'
 
 import { STORE_URL } from '@/config/url.config'
 
-import { IStore } from '@/shared/types/store.interface'
+import { IStore } from '@/shared/domain/entities/store.interface'
 
 interface StoreSwitcherProps {
 	items: IStore[]

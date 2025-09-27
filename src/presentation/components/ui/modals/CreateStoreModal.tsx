@@ -3,7 +3,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 import { useCreateStore } from '@/application/hooks/queries/stores/useCreateStore'
 
-import { IStoreCreate } from '@/shared/types/store.interface'
+import { IStoreCreate } from '@/shared/domain/entities/store.interface'
 
 import { Button } from '../Button'
 import {

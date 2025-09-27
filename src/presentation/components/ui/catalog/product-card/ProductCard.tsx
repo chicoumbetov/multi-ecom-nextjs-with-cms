@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { IProduct } from '@/shared/types/product.interface'
+import { IProduct } from '@/shared/domain/entities/product.interface'
 
 import { formatPrice } from '@/utils/string/format-price'
 

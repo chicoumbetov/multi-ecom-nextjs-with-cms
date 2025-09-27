@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { ICartItem } from '@/shared/types/cart.interface'
+import { ICartItem } from '@/shared/domain/entities/cart.interface'
 
 import { formatPrice } from '@/utils/string/format-price'
 

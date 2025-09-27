@@ -1,4 +1,4 @@
-import { IProduct } from '@/shared/types/product.interface'
+import { IProduct } from '@/shared/domain/entities/product.interface'
 
 export interface ICatalog {
 	title: string
