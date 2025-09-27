@@ -14,7 +14,7 @@ export function useUpload(onChange: (value: string[]) => void) {
 			onChange(data.map(file => file.url))
 		},
 		onError() {
-			toast.error('Ошибка при загрузки файлов')
+			toast.error('Ошибка при загрузке файлов')
 		}
 	})
 
@@ -29,11 +29,11 @@ export function useUpload(onChange: (value: string[]) => void) {
 
 			uploadFiles(formData)
 		}
-	}, [])
+	}, [uploadFiles])
 
-	const handleButtonClick = () => {
-		fileInputRef.current?.click()
-	}
+	const handleButtonClick = useCallback(() => {
+    fileInputRef.current?.click()
+  }, [])
 
 	return useMemo(
 		() => ({

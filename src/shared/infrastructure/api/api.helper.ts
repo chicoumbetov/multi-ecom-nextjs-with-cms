@@ -4,14 +4,13 @@ export const getContentType = () => ({
 	'Content-type': 'application/json'
 })
 
-interface ErrorResponseData {
+export interface ErrorResponseData {
     message: string | string[];
 }
 
 export const errorCatch = <T = ErrorResponseData>(error: AxiosError<T>): string => {
-	const data = error.response?.data as { message?: any };
-
-    const message = data?.message;
+	   const data = error.response?.data as T | undefined;
+    const message = (data as ErrorResponseData)?.message; 
 
 	return message
         ? typeof message === 'object' && Array.isArray(message)
