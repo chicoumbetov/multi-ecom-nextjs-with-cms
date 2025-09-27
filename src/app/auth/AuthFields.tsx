@@ -5,11 +5,11 @@ import {
 	FormField,
 	FormItem,
 	FormMessage
-} from '@/components/ui/form-elements/Form'
-import { Input } from '@/components/ui/form-elements/Input'
+} from '@/presentation/components/ui/form-elements/Form';
+import { Input } from '@/presentation/components/ui/form-elements/Input';
 
-import { validEmail } from '@/shared/regex'
-import { IAuthForm } from '@/shared/types/auth.interface'
+import { validEmail } from '@/shared/regex';
+import { IAuthForm } from '@/shared/types/auth.interface';
 
 interface AuthFieldsProps {
 	form: { control: Control<IAuthForm> } // UseFormReturn<IAuthForm, unknown>

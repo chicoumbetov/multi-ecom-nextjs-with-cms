@@ -4,8 +4,8 @@ import { Search } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
-import { Button } from '@/components/ui/Button'
-import { Input } from '@/components/ui/form-elements/Input'
+import { Button } from '@/presentation/components/ui/Button'
+import { Input } from '@/presentation/components/ui/form-elements/Input'
 
 import { PUBLIC_URL } from '@/config/url.config'
 

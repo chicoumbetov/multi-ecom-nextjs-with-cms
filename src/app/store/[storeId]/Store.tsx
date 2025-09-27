@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading } from '@/components/ui/Heading'
+import { Heading } from '@/presentation/components/ui/Heading'
 import styles from './Store.module.scss'
 
 export function Store() {

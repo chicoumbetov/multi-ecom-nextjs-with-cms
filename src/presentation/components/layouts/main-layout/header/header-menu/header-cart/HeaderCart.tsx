@@ -1,8 +1,8 @@
 import { useRouter } from 'next/navigation'
 
-import { Button } from '@/components/ui/Button'
-import { Heading } from '@/components/ui/Heading'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/Sheet'
+import { Button } from '@/presentation/components/ui/Button'
+import { Heading } from '@/presentation/components/ui/Heading'
+import { Sheet, SheetContent, SheetTrigger } from '@/presentation/components/ui/Sheet'
 
 import { PUBLIC_URL } from '@/config/url.config'
 

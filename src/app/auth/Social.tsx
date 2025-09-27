@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { FaYandex } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/presentation/components/ui/Button'
 
 import { SERVER_URL } from '@/config/api.config'
 

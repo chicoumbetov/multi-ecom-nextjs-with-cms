@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Loader } from '@/components/ui/Loader'
+import { Loader } from '@/presentation/components/ui/Loader'
 
 import { DASHBOARD_URL } from '@/config/url.config'
 

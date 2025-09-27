@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/presentation/components/ui/Button'
 import {
 	Card,
 	CardContent,
@@ -11,8 +11,8 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle
-} from '@/components/ui/Card'
-import { Form } from '@/components/ui/form-elements/Form'
+} from '@/presentation/components/ui/Card'
+import { Form } from '@/presentation/components/ui/form-elements/Form'
 
 import styles from './Auth.module.scss'
 import { AuthFields } from './AuthFields'

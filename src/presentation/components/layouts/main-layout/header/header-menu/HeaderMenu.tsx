@@ -4,9 +4,9 @@ import { LogOut } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Button } from '@/components/ui/Button'
-import { Loader } from '@/components/ui/Loader'
-import { CreateStoreModal } from '@/components/ui/modals/CreateStoreModal'
+import { Button } from '@/presentation/components/ui/Button'
+import { Loader } from '@/presentation/components/ui/Loader'
+import { CreateStoreModal } from '@/presentation/components/ui/modals/CreateStoreModal'
 
 import { DASHBOARD_URL, PUBLIC_URL, STORE_URL } from '@/config/url.config'
 

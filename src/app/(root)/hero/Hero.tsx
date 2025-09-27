@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/presentation/components/ui/Button'
 
 import { PUBLIC_URL } from '@/config/url.config'
 

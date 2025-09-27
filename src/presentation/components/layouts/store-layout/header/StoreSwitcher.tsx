@@ -4,22 +4,22 @@ import { ChevronsUpDown, Plus, StoreIcon } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/presentation/components/ui/Button'
 import {
-	Command,
-	CommandEmpty,
-	CommandGroup,
-	CommandInput,
-	CommandItem,
-	CommandList,
-	CommandSeparator
-} from '@/components/ui/Command'
+    Command,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+    CommandList,
+    CommandSeparator
+} from '@/presentation/components/ui/Command'
 import {
-	Popover,
-	PopoverContent,
-	PopoverTrigger
-} from '@/components/ui/Popover'
-import { CreateStoreModal } from '@/components/ui/modals/CreateStoreModal'
+    Popover,
+    PopoverContent,
+    PopoverTrigger
+} from '@/presentation/components/ui/Popover'
+import { CreateStoreModal } from '@/presentation/components/ui/modals/CreateStoreModal'
 
 import { STORE_URL } from '@/config/url.config'
 

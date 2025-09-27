@@ -1,6 +1,6 @@
 import { Minus, Plus } from 'lucide-react'
 
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/presentation/components/ui/Button'
 
 import { useActions } from '@/application/hooks/useActions'
 import { useCart } from '@/application/hooks/useCart'

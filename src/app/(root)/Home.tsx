@@ -1,4 +1,4 @@
-import { Catalog } from '@/components/ui/catalog/Catalog'
+import { Catalog } from '@/presentation/components/ui/catalog/Catalog'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
