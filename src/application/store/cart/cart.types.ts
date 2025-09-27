@@ -1,4 +1,4 @@
-import type { ICartItem } from '@/shared/types/cart.interface'
+import type { ICartItem } from '@/shared/domain/entities/cart.interface'
 
 export interface ICartInitialState {
 	items: ICartItem[]
