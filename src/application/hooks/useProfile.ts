@@ -1,11 +1,13 @@
+import { UserApiRepository } from '@/user/infrastructure/user.api.repository'
 import { useQuery } from '@tanstack/react-query'
+// import { userService } from '@/user/infrastructure/user.service'
 
-import { userService } from '@/user/infrastructure/user.service'
+const userRepository = new UserApiRepository()
 
 export function useProfile() {
 	const { data: user, isLoading } = useQuery({
 		queryKey: ['profile'],
-		queryFn: () => userService.getProfile()
+		queryFn: () => userRepository.getProfile()
 	})
 
 	return { user, isLoading }
