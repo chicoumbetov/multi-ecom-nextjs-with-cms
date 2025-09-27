@@ -10,7 +10,7 @@ import { CreateStoreModal } from '@/components/ui/modals/CreateStoreModal'
 
 import { DASHBOARD_URL, PUBLIC_URL, STORE_URL } from '@/config/url.config'
 
-import { useProfile } from '@/hooks/useProfile'
+import { useProfile } from '@/application/hooks/useProfile'
 
 import styles from './HeaderMenu.module.scss'
 import { HeaderCart } from './header-cart/HeaderCart'

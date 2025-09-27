@@ -2,8 +2,8 @@ import { Minus, Plus } from 'lucide-react'
 
 import { Button } from '@/components/ui/Button'
 
-import { useActions } from '@/hooks/useActions'
-import { useCart } from '@/hooks/useCart'
+import { useActions } from '@/application/hooks/useActions'
+import { useCart } from '@/application/hooks/useCart'
 
 import { ICartItem } from '@/shared/types/cart.interface'
 

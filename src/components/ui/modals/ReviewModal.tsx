@@ -2,7 +2,7 @@ import { PropsWithChildren, useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { Rating } from 'react-simple-star-rating'
 
-import { useCreateReview } from '@/hooks/queries/reviews/useCreateReview'
+import { useCreateReview } from '@/application/hooks/queries/reviews/useCreateReview'
 
 import { IReviewInput } from '@/shared/types/review.interface'
 

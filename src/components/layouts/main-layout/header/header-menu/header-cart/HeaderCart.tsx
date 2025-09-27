@@ -6,8 +6,8 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/Sheet'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import { useCart } from '@/hooks/useCart'
-import { useProfile } from '@/hooks/useProfile'
+import { useCart } from '@/application/hooks/useCart'
+import { useProfile } from '@/application/hooks/useProfile'
 
 import { formatPrice } from '@/utils/string/format-price'
 

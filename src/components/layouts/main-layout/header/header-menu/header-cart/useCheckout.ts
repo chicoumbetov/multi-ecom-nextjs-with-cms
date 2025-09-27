@@ -3,8 +3,8 @@ import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
 import toast from 'react-hot-toast'
 
-import { useActions } from '@/hooks/useActions'
-import { useCart } from '@/hooks/useCart'
+import { useActions } from '@/application/hooks/useActions'
+import { useCart } from '@/application/hooks/useCart'
 
 import { orderService } from '@/services/order.service'
 

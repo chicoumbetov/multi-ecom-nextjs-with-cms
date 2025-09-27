@@ -7,7 +7,7 @@ import { Loader } from '@/components/ui/Loader'
 
 import { DASHBOARD_URL } from '@/config/url.config'
 
-import { useProfile } from '@/hooks/useProfile'
+import { useProfile } from '@/application/hooks/useProfile'
 
 import { MobileSidebar } from '../sidebar/MobileSidebar'
 

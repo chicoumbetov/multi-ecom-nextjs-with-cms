@@ -1,7 +1,7 @@
 import { type PropsWithChildren, useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import { useCreateStore } from '@/hooks/queries/stores/useCreateStore'
+import { useCreateStore } from '@/application/hooks/queries/stores/useCreateStore'
 
 import { IStoreCreate } from '@/shared/types/store.interface'
 
