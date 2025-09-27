@@ -7,7 +7,7 @@ import { STORE_URL } from '@/config/url.config'
 
 import { storeService } from '@/services/store.service'
 
-import { IStoreCreate } from '@/shared/types/store.interface'
+import { IStoreCreate } from '@/shared/domain/entities/store.interface'
 
 export function useCreateStore() {
 	const router = useRouter()

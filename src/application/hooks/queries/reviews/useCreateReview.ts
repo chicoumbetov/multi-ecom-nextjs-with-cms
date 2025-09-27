@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 import { reviewService } from '@/services/review.service'
 
-import { IReviewInput } from '@/shared/types/review.interface'
+import { IReviewInput } from '@/shared/domain/entities/review.interface'
 
 export const useCreateReview = (storeId: string) => {
 	const params = useParams<{ id: string }>()

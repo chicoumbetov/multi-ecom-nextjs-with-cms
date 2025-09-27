@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 import { categoryService } from '@/services/category.service'
 
-import { ICategoryInput } from '@/shared/types/category.interface'
+import { ICategoryInput } from '@/shared/domain/entities/category.interface'
 
 export const useUpdateCategory = () => {
 	const params = useParams<{ categoryId: string }>()

@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 import { productService } from '@/services/product.service'
 
-import { IProductInput } from '@/shared/types/product.interface'
+import { IProductInput } from '@/shared/domain/entities/product.interface'
 
 export const useUpdateProduct = () => {
 	const params = useParams<{ productId: string }>()

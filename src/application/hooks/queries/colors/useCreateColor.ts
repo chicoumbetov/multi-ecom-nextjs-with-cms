@@ -7,7 +7,7 @@ import { STORE_URL } from '@/config/url.config'
 
 import { colorService } from '@/services/color.service'
 
-import { IColorInput } from '@/shared/types/color.interface'
+import { IColorInput } from '@/shared/domain/entities/color.interface'
 
 export const useCreateColor = () => {
 	const params = useParams<{ storeId: string }>()

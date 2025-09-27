@@ -7,7 +7,7 @@ import { STORE_URL } from '@/config/url.config'
 
 import { productService } from '@/services/product.service'
 
-import { IProductInput } from '@/shared/types/product.interface'
+import { IProductInput } from '@/shared/domain/entities/product.interface'
 
 export const useCreateProduct = () => {
 	const params = useParams<{ storeId: string }>()

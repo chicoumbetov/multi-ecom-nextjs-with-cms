@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 import { colorService } from '@/services/color.service'
 
-import { IColorInput } from '@/shared/types/color.interface'
+import { IColorInput } from '@/shared/domain/entities/color.interface'
 
 export const useUpdateColor = () => {
 	const params = useParams<{ colorId: string }>()

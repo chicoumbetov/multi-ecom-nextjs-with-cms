@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 import { storeService } from '@/services/store.service'
 
-import { IStoreEdit } from '@/shared/types/store.interface'
+import { IStoreEdit } from '@/shared/domain/entities/store.interface'
 
 export function useUpdateStore() {
 	const params = useParams<{ storeId: string }>()
