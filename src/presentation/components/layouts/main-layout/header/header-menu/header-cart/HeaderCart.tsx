@@ -11,7 +11,7 @@ import { useProfile } from '@/application/hooks/useProfile'
 
 import { formatPrice } from '@/utils/string/format-price'
 
-import styles from './HeaderCart.module.scss'
+import styles from './HeaderCart.module.css'
 import { CartItem } from './cart-item/CartItem'
 import { useCheckout } from './useCheckout'
 

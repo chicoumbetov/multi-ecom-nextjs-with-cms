@@ -14,7 +14,7 @@ import {
 } from '@/presentation/components/ui/Card'
 import { Form } from '@/presentation/components/ui/form-elements/Form'
 
-import styles from './Auth.module.scss'
+import styles from './Auth.module.css'
 import { AuthFields } from './AuthFields'
 import { Social } from './Social'
 import { useAuthForm } from './useAuthForm'

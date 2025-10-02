@@ -1,0 +1,24 @@
+/*
+ * SCSS Selector: .wrapper
+ * Tailwind: border-t mt-16
+ */
+.wrapper {
+    /* border-t: defines the style and width of the top border. 
+       Usually 1px solid currentColor, but depends on base configuration. */
+    border-top-width: 1px;
+    border-style: solid; 
+    
+    margin-top: 4rem; /* mt-16 (16 * 0.25rem = 4rem) */
+}
+
+/*
+ * SCSS Selector: .wrapper > .footer
+ * Tailwind: mx-auto py-5 text-center
+ */
+.wrapper > .footer {
+    margin-left: auto;
+    margin-right: auto; /* mx-auto */
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; /* py-5 */
+    text-align: center;
+}

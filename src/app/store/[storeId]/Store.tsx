@@ -1,7 +1,7 @@
 'use client'
 
 import { Heading } from '@/presentation/components/ui/Heading'
-import styles from './Store.module.scss'
+import styles from './Store.module.css'
 
 export function Store() {
 	return (

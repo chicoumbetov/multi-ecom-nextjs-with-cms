@@ -6,7 +6,7 @@ import { productService } from '@/services/product.service'
 
 import { Catalog } from '@/presentation/components/ui/catalog/Catalog'
 import { IProduct } from '@/shared/domain/entities/product.interface'
-import styles from './Product.module.scss'
+import styles from './Product.module.css'
 import { ProdcutGallery } from './prodcut-gallery/ProdcutGallery'
 import { ProductInfo } from './product-info/ProductInfo'
 import { ProductReviews } from './product-reviews/ProductReviews'

@@ -9,7 +9,7 @@ import { Input } from '@/presentation/components/ui/form-elements/Input'
 
 import { PUBLIC_URL } from '@/config/url.config'
 
-import styles from './SearchInput.module.scss'
+import styles from './SearchInput.module.css'
 
 export function SearchInput() {
 	const [searchTerm, setSearchTerm] = useState<string>('')

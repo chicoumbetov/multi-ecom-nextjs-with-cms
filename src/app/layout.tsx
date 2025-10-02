@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 import { SITE_DESCRIPTION, SITE_NAME } from '@/presentation/constants/seo.constants'
 
-import './global.scss'
+import './global.css'
 import { Providers } from './providers'
 
 export const metadata: Metadata = {

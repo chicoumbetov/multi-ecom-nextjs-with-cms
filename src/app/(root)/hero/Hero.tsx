@@ -7,7 +7,7 @@ import { PUBLIC_URL } from '@/config/url.config'
 
 import { SITE_DESCRIPTION } from '@/presentation/constants/seo.constants'
 
-import styles from './Hero.module.scss'
+import styles from './Hero.module.css'
 
 export function Hero() {
 	return (

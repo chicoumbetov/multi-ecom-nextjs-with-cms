@@ -1,0 +1,58 @@
+/*
+ * SCSS Selector: .card
+ * Tailwind: bg-white
+ */
+.card {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+/*
+ * SCSS Selector: .card img
+ * Tailwind: rounded-lg
+ */
+.card img {
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+/*
+ * SCSS Selector: .card > .title
+ * Tailwind: mt-4 font-semibold text-gray-700 line-clamp-1
+ */
+.card > .title {
+    margin-top: 1rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity)); /* text-gray-700 */
+
+    /* line-clamp-1 properties (often requires a vendor prefix like -webkit) */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+/*
+ * SCSS Selector: .card > .category
+ * Tailwind: mt-1 text-sm text-gray-500
+ */
+.card > .category {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity)); /* text-gray-500 */
+}
+
+/*
+ * SCSS Selector: .card > .price
+ * Tailwind: mt-1 font-medium text-sm text-gray-900
+ */
+.card > .price {
+    margin-top: 0.25rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity)); /* text-gray-900 */
+}

@@ -8,7 +8,7 @@ import { Button } from '@/presentation/components/ui/Button'
 import { ConfirmModal } from '@/presentation/components/ui/modals/ConfirmModal'
 import { ReviewModal } from '@/presentation/components/ui/modals/ReviewModal'
 import { IProduct } from '@/shared/domain/entities/product.interface'
-import styles from './ProductReviews.module.scss'
+import styles from './ProductReviews.module.css'
 
 interface ProductReviewsProps {
 	product: IProduct

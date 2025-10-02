@@ -1,0 +1,128 @@
+/*
+ * SCSS Selector: .wrapper .header
+ * Tailwind: md:flex md:items-center md:justify-between mb-4
+ */
+.wrapper .header {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/*
+ * SCSS Selector: .wrapper .header > .info
+ * Tailwind: max-w-2xl px-4 lg:max-w-full lg:px-0
+ */
+.wrapper .header > .info {
+    max-width: 42rem; /* max-w-2xl */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .wrapper .header > .info {
+        max-width: 100%; /* lg:max-w-full */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*
+ * SCSS Selector: .wrapper .header > .info > h1
+ * Tailwind: text-2xl font-bold
+ */
+.wrapper .header > .info > h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+/*
+ * SCSS Selector: .wrapper .header > .info > p
+ * Tailwind: mt-2 text-sm text-muted-foreground
+ */
+.wrapper .header > .info > p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* text-muted-foreground color would depend on your Tailwind theme */
+}
+
+/*
+ * SCSS Selector: .wrapper .header > a
+ * Tailwind: hidden text-sm font-medium text-blue-600 hover:text-blue-600/90 md:flex
+ */
+.wrapper .header > a {
+    display: none; /* hidden */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.wrapper .header > a:hover {
+    color: rgb(37 99 235 / 0.9); /* hover:text-blue-600/90 */
+}
+
+@media (min-width: 768px) {
+    .wrapper .header > a {
+        display: flex; /* md:flex */
+    }
+}
+
+/*
+ * SCSS Selector: .wrapper .catalog
+ * Tailwind: flex items-center w-full
+ */
+.wrapper .catalog {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*
+ * SCSS Selector: .wrapper .catalog > .products
+ * Tailwind: mt-2 w-full grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 gap-8
+ */
+.wrapper .catalog > .products {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .wrapper .catalog > .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* sm:grid-cols-2 */
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper .catalog > .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper .catalog > .products {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* lg:grid-cols-3 */
+    }
+}
+
+@media (min-width: 1280px) {
+    .wrapper .catalog > .products {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* xl:grid-cols-3 */
+    }
+}
+
+@media (min-width: 1536px) {
+    .wrapper .catalog > .products {
+        grid-template-columns: repeat(6, minmax(0, 1fr)); /* 2xl:grid-cols-6 */
+    }
+}

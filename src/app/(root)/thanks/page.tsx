@@ -6,7 +6,7 @@ import { PUBLIC_URL } from '@/config/url.config'
 
 import { Button } from '@/presentation/components/ui/Button'
 import { NO_INDEX_PAGE } from '@/presentation/constants/seo.constants'
-import styles from '../hero/Hero.module.scss'
+import styles from '../hero/Hero.module.css'
 
 export const metadata: Metadata = {
 	title: 'Спасибо за покупку',

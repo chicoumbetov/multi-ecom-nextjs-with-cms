@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import styles from './Catalog.module.scss'
+import styles from './Catalog.module.css'
 import { ICatalog } from './catalog.interface'
 import { ProductCard } from './product-card/ProductCard'
 

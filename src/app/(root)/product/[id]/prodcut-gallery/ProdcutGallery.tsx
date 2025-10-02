@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { cn } from '@/utils/clsx'
 
 import { IProduct } from '@/shared/domain/entities/product.interface'
-import styles from './ProdcutGallery.module.scss'
+import styles from './ProdcutGallery.module.css'
 
 interface ProdcutGalleryProps {
 	product: IProduct

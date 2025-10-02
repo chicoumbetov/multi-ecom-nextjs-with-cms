@@ -5,7 +5,7 @@ import { PUBLIC_URL } from '@/config/url.config'
 
 import { SITE_NAME } from '@/presentation/constants/seo.constants'
 
-import styles from './Logo.module.scss'
+import styles from './Logo.module.css'
 
 export function Logo() {
 	return (

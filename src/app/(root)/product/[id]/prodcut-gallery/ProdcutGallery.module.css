@@ -1,0 +1,3 @@
+@reference "tailwindcss"
+
+.image{@apply rounded-lg}.gallery{@apply flex mt-6 gap-6}.gallery>.item{@apply duration-300 border rounded-lg overflow-hidden}

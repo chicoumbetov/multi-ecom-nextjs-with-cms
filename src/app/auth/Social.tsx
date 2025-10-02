@@ -8,7 +8,7 @@ import { Button } from '@/presentation/components/ui/Button'
 
 import { SERVER_URL } from '@/config/api.config'
 
-import styles from './Auth.module.scss'
+import styles from './Auth.module.css'
 
 export function Social() {
 	const router = useRouter()

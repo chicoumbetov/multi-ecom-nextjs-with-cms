@@ -12,7 +12,7 @@ import { DASHBOARD_URL, PUBLIC_URL, STORE_URL } from '@/config/url.config'
 
 import { useProfile } from '@/application/hooks/useProfile'
 
-import styles from './HeaderMenu.module.scss'
+import styles from './HeaderMenu.module.css'
 import { HeaderCart } from './header-cart/HeaderCart'
 
 export function HeaderMenu() {

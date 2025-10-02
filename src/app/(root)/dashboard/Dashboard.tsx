@@ -16,7 +16,7 @@ import { useProfile } from '@/application/hooks/useProfile'
 import { Button } from '@/presentation/components/ui/Button'
 import { DataTable } from '@/presentation/components/ui/data-table/DataTable'
 import { EnumOrderStatus } from '@/shared/domain/entities/order.interface'
-import styles from './Dashboard.module.scss'
+import styles from './Dashboard.module.css'
 import { IOrderColumn, orderColumns } from './OrderColumns'
 
 export function Dashboard() {
@@ -36,7 +36,7 @@ export function Dashboard() {
 		mutationFn: () => authService.logout(),
 		onSuccess: () => router.push('/auth')
 	})
-
+	console.log('Dashboard user :', user);
 	if (!user) return null
 
 	const formattedOrders: IOrderColumn[] = user.orders.map(order => ({

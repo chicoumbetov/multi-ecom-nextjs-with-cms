@@ -8,7 +8,7 @@ import { getReviewWordWithEnding } from '@/utils/string/get-review-word-with-end
 import { IProduct } from '@/shared/domain/entities/product.interface'
 import { AddToCartButton } from './AddToCartButton'
 import { FavoriteButton } from './FavoriteButton'
-import styles from './ProductInfo.module.scss'
+import styles from './ProductInfo.module.css'
 
 interface ProductInfoProps {
 	product: IProduct

@@ -7,7 +7,7 @@ import { IProduct } from '@/shared/domain/entities/product.interface'
 
 import { formatPrice } from '@/utils/string/format-price'
 
-import styles from './ProductCard.module.scss'
+import styles from './ProductCard.module.css'
 
 interface ProductCardProps {
 	product: IProduct

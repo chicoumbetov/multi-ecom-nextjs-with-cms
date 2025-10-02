@@ -1,0 +1,33 @@
+/*
+ * SCSS Selector: .wrapper
+ * Tailwind: flex flex-col h-full
+ */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* h-full */
+}
+
+/*
+ * SCSS Selector: .wrapper > .layout
+ * Tailwind: flex-1
+ */
+.wrapper > .layout {
+    flex: 1 1 0%; /* flex-1 */
+}
+
+/*
+ * SCSS Selector: .wrapper > .layout > main
+ * Tailwind: mx-5 lg:mx-14
+ */
+.wrapper > .layout > main {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; /* mx-5 */
+}
+
+@media (min-width: 1024px) {
+    .wrapper > .layout > main {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem; /* lg:mx-14 (14 * 0.25rem = 3.5rem) */
+    }
+}
