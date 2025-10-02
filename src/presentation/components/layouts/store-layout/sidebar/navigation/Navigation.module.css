@@ -1,0 +1,90 @@
+/*
+ * SCSS Selector: .wrapper
+ * Tailwind: flex flex-col w-full flex-1 mt-6
+ */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* w-full */
+    flex: 1 1 0%; /* flex-1 */
+    margin-top: 1.5rem; /* mt-6 */
+}
+
+/*
+ * SCSS Selector: .wrapper > .navigation
+ * Tailwind: flex flex-col w-full space-y-3
+ */
+.wrapper > .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* w-full */
+    /* space-y-3: margin-top on all children except the first */
+}
+.wrapper > .navigation > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse))); /* space-y-3 */
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse)); /* space-y-3 */
+}
+
+/*
+ * SCSS Selector: .wrapper > .navigation .route
+ * Tailwind: flex items-center gap-x-3 text-slate-500 text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-blue-200/20 hover:text-blue-500 hover:drop-shadow-sm bg-transparent transition-all duration-200
+ */
+.wrapper > .navigation .route {
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem; /* gap-x-3 */
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity)); /* text-slate-500 */
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* text-sm */
+    font-weight: 500;
+    padding-top: 0.625rem; /* py-2.5 */
+    padding-bottom: 0.625rem; /* py-2.5 */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; /* px-3 */
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: transparent;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.wrapper > .navigation .route:hover {
+    --tw-bg-opacity: 0.2;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity)); /* hover:bg-blue-200/20 */
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity)); /* hover:text-blue-500 */
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.05)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.03)); /* hover:drop-shadow-sm */
+}
+
+/*
+ * SCSS Selector: .wrapper > .navigation .route > svg
+ * Tailwind: size-5
+ */
+.wrapper > .navigation .route > svg {
+    width: 1.25rem;
+    height: 1.25rem; /* size-5 */
+}
+
+/*
+ * SCSS Selector: .wrapper > .navigation .route.active
+ * Tailwind: text-sm text-blue-500 bg-blue-200/20 hover:bg-blue-200/20 hover:text-blue-500
+ * Note: The hover styles here are redundant as they match the active state,
+ * but they are included for literal conversion.
+ */
+.wrapper > .navigation .route.active {
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* text-sm */
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity)); /* text-blue-500 */
+    --tw-bg-opacity: 0.2;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity)); /* bg-blue-200/20 */
+}
+
+.wrapper > .navigation .route.active:hover {
+    --tw-bg-opacity: 0.2;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity)); /* hover:bg-blue-200/20 */
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity)); /* hover:text-blue-500 */
+}

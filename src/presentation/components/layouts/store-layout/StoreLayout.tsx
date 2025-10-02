@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react'
 
-import styles from './StoreLayout.module.scss'
+import styles from './StoreLayout.module.css'
 import { Header } from './header/Header'
 import { Sidebar } from './sidebar/Sidebar'
 

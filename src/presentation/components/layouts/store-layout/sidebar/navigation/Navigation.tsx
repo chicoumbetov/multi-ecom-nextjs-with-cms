@@ -13,7 +13,7 @@ import { useParams } from 'next/navigation'
 import { STORE_URL } from '@/config/url.config'
 
 import { MenuItem } from './MenuItem'
-import styles from './Navigation.module.scss'
+import styles from './Navigation.module.css'
 import { IMenuItem } from './menu.interface'
 
 export function Navigation() {

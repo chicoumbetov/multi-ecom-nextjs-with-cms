@@ -1,0 +1,66 @@
+/*
+ * SCSS Selector: .wrapper
+ * Tailwind: flex flex-col w-full
+ */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* w-full */
+}
+
+/*
+ * SCSS Selector: .wrapper > .layout > .header
+ * Tailwind: h-[70px] lg:pl-64 fixed inset-y-0 w-full z-[49]
+ */
+.wrapper > .layout > .header {
+    height: 70px; /* h-[70px] */
+    position: fixed;
+    top: 0;
+    bottom: 0; /* inset-y-0 */
+    width: 100%;
+    z-index: 49; /* z-[49] */
+}
+
+@media (min-width: 1024px) {
+    .wrapper > .layout > .header {
+        padding-left: 16rem; /* lg:pl-64 (64 * 0.25rem = 16rem) */
+    }
+}
+
+/*
+ * SCSS Selector: .wrapper > .layout > .sidebar
+ * Tailwind: hidden lg:flex h-full w-64 flex-col fixed inset-y-0 z-[50]
+ */
+.wrapper > .layout > .sidebar {
+    display: none; /* hidden */
+    height: 100%; /* h-full */
+    width: 16rem; /* w-64 (64 * 0.25rem = 16rem) */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0; /* inset-y-0 */
+    z-index: 50; /* z-[50] */
+}
+
+@media (min-width: 1024px) {
+    .wrapper > .layout > .sidebar {
+        display: flex; /* lg:flex */
+    }
+}
+
+/*
+ * SCSS Selector: .wrapper > .layout > main
+ * Tailwind: lg:pl-64 py-[70px] bg-white
+ */
+.wrapper > .layout > main {
+    padding-top: 70px;
+    padding-bottom: 70px; /* py-[70px] */
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity)); /* bg-white */
+}
+
+@media (min-width: 1024px) {
+    .wrapper > .layout > main {
+        padding-left: 16rem; /* lg:pl-64 (64 * 0.25rem = 16rem) */
+    }
+}

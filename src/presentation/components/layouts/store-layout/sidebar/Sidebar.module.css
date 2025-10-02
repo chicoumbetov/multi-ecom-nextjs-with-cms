@@ -1,0 +1,19 @@
+/*
+ * SCSS Selector: .sidebar
+ * Tailwind: h-full flex flex-col bg-neutral-50 border-r overflow-y-auto pt-4 px-5 my-1
+ */
+.sidebar {
+    height: 100%; /* h-full */
+    display: flex;
+    flex-direction: column;
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity)); /* bg-neutral-50 */
+    border-right-width: 1px; /* border-r */
+    border-style: solid; 
+    overflow-y: auto;
+    padding-top: 1rem; /* pt-4 */
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; /* px-5 */
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; /* my-1 */
+}

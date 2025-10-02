@@ -11,7 +11,7 @@ import { useProfile } from '@/application/hooks/useProfile'
 
 import { MobileSidebar } from '../sidebar/MobileSidebar'
 
-import styles from './Header.module.scss'
+import styles from './Header.module.css'
 import { StoreSwitcher } from './StoreSwitcher'
 
 export function Header() {

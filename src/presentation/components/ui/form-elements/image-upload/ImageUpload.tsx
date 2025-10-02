@@ -5,7 +5,7 @@ import { cn } from '@/utils/clsx'
 
 import { Button } from '../../Button'
 
-import styles from './ImageUpload.module.scss'
+import styles from './ImageUpload.module.css'
 import { useUpload } from './useUpload'
 
 interface ImageUploadProps {
