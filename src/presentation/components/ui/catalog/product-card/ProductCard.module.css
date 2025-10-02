@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .card
+ *  Selector: .card
  * Tailwind: bg-white
  */
 .card {
@@ -8,7 +8,7 @@
 }
 
 /*
- * SCSS Selector: .card img
+ *  Selector: .card img
  * Tailwind: rounded-lg
  */
 .card img {
@@ -16,7 +16,7 @@
 }
 
 /*
- * SCSS Selector: .card > .title
+ *  Selector: .card > .title
  * Tailwind: mt-4 font-semibold text-gray-700 line-clamp-1
  */
 .card > .title {
@@ -33,7 +33,7 @@
 }
 
 /*
- * SCSS Selector: .card > .category
+ *  Selector: .card > .category
  * Tailwind: mt-1 text-sm text-gray-500
  */
 .card > .category {
@@ -45,7 +45,7 @@
 }
 
 /*
- * SCSS Selector: .card > .price
+ *  Selector: .card > .price
  * Tailwind: mt-1 font-medium text-sm text-gray-900
  */
 .card > .price {

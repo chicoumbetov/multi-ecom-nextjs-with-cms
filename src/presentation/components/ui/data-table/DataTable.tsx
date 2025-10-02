@@ -22,7 +22,7 @@ import {
 } from '../Table'
 import { Input } from '../form-elements/Input'
 
-import styles from './DataTable.module.scss'
+import styles from './DataTable.module.css'
 
 interface DataTableProps<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[]

@@ -7,7 +7,7 @@ import { useCart } from '@/application/hooks/useCart'
 
 import { ICartItem } from '@/shared/domain/entities/cart.interface'
 
-import styles from '../HeaderCart.module.scss'
+import styles from '../HeaderCart.module.css'
 
 interface CartActionsProps {
 	item: ICartItem

@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import { cn } from '@/utils/clsx'
 
-import styles from './Navigation.module.scss'
+import styles from './Navigation.module.css'
 import { IMenuItem } from './menu.interface'
 
 interface MenuItemProps {

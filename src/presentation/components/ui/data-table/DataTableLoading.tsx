@@ -5,7 +5,7 @@ import { Loader } from '../Loader'
 
 
 import { Skeleton } from '../Skeleton'
-import styles from './DataTable.module.scss'
+import styles from './DataTable.module.css'
 
 const DataTableLoading: FC = () => {
 	return (

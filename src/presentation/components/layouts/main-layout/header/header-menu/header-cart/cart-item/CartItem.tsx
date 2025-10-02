@@ -7,7 +7,7 @@ import { ICartItem } from '@/shared/domain/entities/cart.interface'
 
 import { formatPrice } from '@/utils/string/format-price'
 
-import styles from '../HeaderCart.module.scss'
+import styles from '../HeaderCart.module.css'
 
 import { CartActions } from './CartActions'
 
