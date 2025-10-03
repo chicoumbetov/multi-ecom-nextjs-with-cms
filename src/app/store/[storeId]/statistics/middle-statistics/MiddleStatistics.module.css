@@ -1,0 +1,109 @@
+.middle {
+    /* @apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7 mt-6; */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem; /* gap-4 */
+    margin-top: 1.5rem; /* mt-6 */
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+    .middle {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+    }
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+    .middle {
+        grid-template-columns: repeat(7, minmax(0, 1fr)); /* lg:grid-cols-7 */
+    }
+}
+
+.middle .header {
+    /* @apply flex flex-col items-stretch space-y-0 border-b p-4; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom-width: 1px;
+    padding: 1rem; /* p-4 */
+    /* space-y-0 is the default in flex-direction: column; equivalent to margin-top: 0 on children */
+}
+
+.middle .header > h3 {
+    /* @apply text-xl font-medium tracking-[0.1px] line-clamp-1; */
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75rem;
+    font-weight: 500; /* font-medium */
+    letter-spacing: 0.1px; /* tracking-[0.1px] */
+    overflow: hidden; /* line-clamp-1 */
+    display: -webkit-box; /* line-clamp-1 */
+    -webkit-box-orient: vertical; /* line-clamp-1 */
+    -webkit-line-clamp: 1; /* line-clamp-1 */
+}
+
+.middle > .overview {
+    /* @apply col-span-1 lg:col-span-3 xl:col-span-4; */
+    grid-column: span 1 / span 1; /* col-span-1 */
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+    .middle > .overview {
+        grid-column: span 3 / span 3; /* lg:col-span-3 */
+    }
+}
+
+/* Extra-large devices (xl) */
+@media (min-width: 1280px) {
+    .middle > .overview {
+        grid-column: span 4 / span 4; /* xl:col-span-4 */
+    }
+}
+
+.middle > .last_users {
+    /* @apply col-span-1 lg:col-span-3; */
+    grid-column: span 1 / span 1; /* col-span-1 */
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+    .middle > .last_users {
+        grid-column: span 3 / span 3; /* lg:col-span-3 */
+    }
+}
+
+.middle > .last_users .user {
+    /* @apply flex items-center mt-5; */
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem; /* mt-5 */
+}
+
+.middle > .last_users .user > img {
+    /* @apply rounded-full; */
+    border-radius: 9999px; /* rounded-full */
+}
+
+.middle > .last_users .user > .info {
+    /* @apply ml-4 space-y-1 text-sm text-muted-foreground; */
+    margin-left: 1rem; /* ml-4 */
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.25rem;
+    color: var(--muted-foreground-color, #6b7280); /* text-muted-foreground - Assuming a variable or a common gray */
+    /* space-y-1 equivalent: */
+    /* > * + * { margin-top: 0.25rem; } - This needs a sibling selector or child rule */
+}
+
+.middle > .last_users .user > .info > .name {
+    /* @apply leading-none text-black font-medium; */
+    line-height: 1; /* leading-none */
+    color: #000; /* text-black */
+    font-weight: 500; /* font-medium */
+}
+
+.middle > .last_users .user .total {
+    /* @apply ml-auto font-medium; */
+    margin-left: auto; /* ml-auto */
+    font-weight: 500; /* font-medium */
+}
