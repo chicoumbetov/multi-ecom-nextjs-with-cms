@@ -1,3 +1,106 @@
-@reference "tailwindcss"
+/* Base Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.header{@apply flex justify-between items-center;>h1{@apply text-2xl font-bold}svg{@apply size-4 mr-2}}.reviews{@apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4}.reviews>.review{@apply border rounded-lg p-4}.reviews>.review>.header{@apply flex justify-between}.reviews>.review>.header>.user{@apply flex items-center gap-x-4 font-medium}.reviews>.review>.header>.user>img{@apply rounded-full}.reviews>.review .delete{@apply -mt-3 text-red-500}.reviews>.review .delete>svg{@apply size-5}.reviews>.review>.text{@apply text-sm text-muted-foreground mt-1}.reviews>.review>.not_found{@apply mt-4}
+/* Nested Header Elements */
+/* For h1 inside .header */
+.header h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+}
+
+/* For svg inside .header */
+.header svg {
+    width: 1rem; /* size-4 */
+    height: 1rem; /* size-4 */
+    margin-right: 0.5rem; /* mr-2 */
+}
+
+
+/* Base Reviews Container */
+.reviews {
+    display: grid;
+    /* grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 */
+    /* Note: Standard CSS cannot replicate responsive grid-cols directly. 
+       This requires media queries, which are added below. */
+    gap: 2rem; /* gap-8 */
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* Review Item */
+.review {
+    border-width: 1px; /* border */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1rem; /* p-4 */
+}
+
+/* Header inside Review */
+.review .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* User container inside Review Header */
+.review .header .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-x-4 */
+    font-weight: 500; /* font-medium */
+}
+
+/* User Image */
+.review .header .user img {
+    border-radius: 9999px; /* rounded-full */
+}
+
+/* Delete Button/Icon */
+.review .delete {
+    margin-top: -0.75rem; /* -mt-3 */
+    color: var(--color-red-500, #ef4444); /* text-red-500 (Fallback color added for standard red) */
+}
+
+.review .delete svg {
+    width: 1.25rem; /* size-5 */
+    height: 1.25rem; /* size-5 */
+}
+
+/* Review Text/Body */
+.review .text {
+    font-size: 0.875rem; /* text-sm */
+    /* text-muted-foreground is a custom color variable from shadcn/ui */
+    color: hsl(var(--muted-foreground)); 
+    margin-top: 0.25rem; /* mt-1 */
+}
+
+/* Not Found message */
+.review .not_found {
+    margin-top: 1rem; /* mt-4 */
+}
+
+/* ------------------------------------------- */
+/* RESPONSIVE LAYOUT (for .reviews) */
+/* ------------------------------------------- */
+
+/* sm:grid-cols-2 (approx. 640px) */
+@media (min-width: 640px) {
+    .reviews {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* md:grid-cols-2 (approx. 768px) */
+@media (min-width: 768px) {
+    .reviews {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* lg:grid-cols-4 (approx. 1024px) */
+@media (min-width: 1024px) {
+    .reviews {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

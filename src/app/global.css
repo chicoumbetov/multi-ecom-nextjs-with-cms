@@ -68,14 +68,18 @@
         --chart-5: 340 75% 55%;
     }
 }
+/* Selector for all elements, equivalent to 'border-border' */
+* {
+    /* @apply border-border; */
+    border-color: hsl(var(--border));
+}
 
-@layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
+/* Selector for the body element, applying background and text colors */
+body {
+    /* @apply bg-background text-foreground; */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
 
-        font-family: var(--font-geist-sans), sans-serif;
-    }
+    /* Custom font-family declaration */
+    font-family: var(--font-geist-sans), sans-serif;
 }

@@ -4,9 +4,10 @@ const config = {
 	darkMode: ['class', ''],
 	content: [
 		'./pages/**/*.{ts,tsx}',
-		'./presentation/components/**/*.{ts,tsx}',
-		'./app/**/*.{ts,tsx}',
-		'./src/**/*.{ts,tsx}'
+        './presentation/components/**/*.{ts,tsx}',
+        './app/**/*.{ts,tsx}',
+        './src/**/*.{ts,tsx}',
+        './src/**/*.css'
 	],
 	prefix: '',
 	theme: {
@@ -36,10 +37,8 @@ const config = {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
-				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
-				},
+				'muted-DEFAULT': 'hsl(var(--muted))',
+				'muted-foreground': 'hsl(var(--muted-foreground))',
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
