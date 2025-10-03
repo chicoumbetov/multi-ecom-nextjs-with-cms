@@ -49,7 +49,7 @@ export function ReviewModal({
 
 	return (
 		<Dialog open={isOpen} onOpenChange={setIsOpen}>
-			<DialogTrigger>{children}</DialogTrigger>
+			<DialogTrigger asChild>{children}</DialogTrigger>
 			<DialogContent>
 				<DialogHeader>
 					<DialogTitle>Создание отзыва</DialogTitle>
