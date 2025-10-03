@@ -1,13 +1,11 @@
 import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts'
 
-
-
 import { formatPrice } from '@/utils/string/format-price'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/Card'
-import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/presentation/components/ui/chart'
+import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/presentation/components/ui/Chart'
 import { IMonthlySales } from '@/shared/domain/entities/statistics.interface'
-import styles from './MiddleStatistics.module.scss'
+import styles from './MiddleStatistics.module.css'
 
 const chartConfig = {
 	value: {
