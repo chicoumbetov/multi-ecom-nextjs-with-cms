@@ -36,7 +36,7 @@ export function Dashboard() {
 		mutationFn: () => authService.logout(),
 		onSuccess: () => router.push('/auth')
 	})
-	console.log('Dashboard user :', user);
+
 	if (!user) return null
 
 	const formattedOrders: IOrderColumn[] = user.orders.map(order => ({

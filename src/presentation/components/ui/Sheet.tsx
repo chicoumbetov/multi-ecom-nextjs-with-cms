@@ -62,6 +62,9 @@ const SheetContent = React.forwardRef<
 			className={cn(sheetVariants({ side }), className)}
 			{...props}
 		>
+			<SheetPrimitive.Title className='sr-only'>
+        Sheet tsx Title
+      </SheetPrimitive.Title>
 			{children}
 			<SheetPrimitive.Close className='absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary'>
 				<X className='h-4 w-4' />
@@ -101,7 +104,7 @@ const SheetFooter = ({
 SheetFooter.displayName = 'SheetFooter'
 
 const SheetTitle = React.forwardRef<
-	React.ElementRef<typeof SheetPrimitive.Title>,
+	React.ComponentRef<typeof SheetPrimitive.Title>,
 	React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
 >(({ className, ...props }, ref) => (
 	<SheetPrimitive.Title

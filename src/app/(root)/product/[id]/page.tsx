@@ -36,7 +36,8 @@ export async function generateMetadata({
 }: {
 	params: { id: string }
 }): Promise<Metadata> {
-	const { product } = await getProducts(params)
+	const resolvedParams = await params
+	const { product } = await getProducts(resolvedParams)
 
 	return {
 		title: product.title,
@@ -59,13 +60,16 @@ export default async function ProductPage({
 }: {
 	params: { id: string }
 }) {
-	const { product, similarProducts } = await getProducts(params)
+	const resolved = await params
+	const { product, similarProducts } = await getProducts(resolved)
+
+	const id = resolved.id
 
 	return (
 		<Product
 			initialProduct={product}
 			similarProducts={similarProducts}
-			id={params.id}
+			id={id}
 		/>
 	)
 }
