@@ -32,8 +32,6 @@ async function getProducts(params: { id: string }) {
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const resolved = await props.params
-  console.log('generateMetadata :', resolved, props.params);
-  
 	const { product } = await getProducts(resolved)
 
 	return {
