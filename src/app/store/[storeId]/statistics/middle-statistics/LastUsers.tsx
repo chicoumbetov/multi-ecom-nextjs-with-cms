@@ -14,7 +14,7 @@ export function LastUsers({ data }: LastUsersProps) {
 	return (
 		<Card>
 			<CardHeader className={styles.header}>
-				<CardTitle>Прибыль</CardTitle>
+				<CardTitle>Покупатели</CardTitle>
 			</CardHeader>
 			<CardContent>
 				{data.length ? (
