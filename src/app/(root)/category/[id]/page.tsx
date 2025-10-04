@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Catalog } from '@/presentation/components/ui/catalog/Catalog'
 import { categoryService } from '@/services/category.service'
 import { productService } from '@/services/product.service'
+import { PageProps } from '../../../../../.next/types/app/layout'
 
 export const revalidate = 60
 
@@ -14,12 +15,10 @@ async function getProducts(params: { id: string }) {
 	return { products, category }
 }
 
-export async function generateMetadata({
-	params
-}: {
-	params: { id: string }
-}): Promise<Metadata> {
-	const { category, products } = await getProducts(params)
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+	const resolved = await props.params
+
+	const { category, products } = await getProducts(resolved)
 
 	return {
 		title: category.title,
@@ -37,12 +36,9 @@ export async function generateMetadata({
 	}
 }
 
-export default async function CategoryPage({
-	params
-}: {
-	params: { id: string }
-}) {
-	const { category, products } = await getProducts(params)
+export default async function CategoryPage(props: PageProps) {
+	const resolved = await props.params
+	const { category, products } = await getProducts(resolved)
 
 	return (
 		<div className='my-6'>
