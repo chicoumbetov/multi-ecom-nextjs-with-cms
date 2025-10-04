@@ -47,7 +47,7 @@ export function StoreSwitcher({ items }: StoreSwitcherProps) {
 					size='sm'
 					role='combobox'
 					aria-expanded={isOpen}
-					aria-label='Выберете магазин'
+					aria-label='Выберите магазин'
 					className='w-52'
 				>
 					<StoreIcon className='mr-2 size-4' />
@@ -59,7 +59,7 @@ export function StoreSwitcher({ items }: StoreSwitcherProps) {
 				<Command>
 					<CommandList>
 						<CommandInput placeholder='Найти магазин...' />
-						<CommandEmpty>Нечего не найдено.</CommandEmpty>
+						<CommandEmpty>Ничего не найдено.</CommandEmpty>
 						<CommandGroup heading='Магазины'>
 							{items.map(store => (
 								<CommandItem
