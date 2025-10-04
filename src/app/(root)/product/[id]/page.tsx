@@ -1,9 +1,8 @@
-import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
-
-import { productService } from '@/services/product.service'
-
-import { Product } from './Product'
+import { productService } from "@/services/product.service";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { PageProps } from "../../../../../.next/types/app/layout";
+import { Product } from "./Product";
 
 export const revalidate = 60
 
@@ -31,13 +30,11 @@ async function getProducts(params: { id: string }) {
 	}
 }
 
-export async function generateMetadata({
-	params
-}: {
-	params: { id: string }
-}): Promise<Metadata> {
-	const resolvedParams = await params
-	const { product } = await getProducts(resolvedParams)
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const resolved = await props.params
+  console.log('generateMetadata :', resolved, props.params);
+  
+	const { product } = await getProducts(resolved)
 
 	return {
 		title: product.title,
@@ -55,15 +52,10 @@ export async function generateMetadata({
 	}
 }
 
-export default async function ProductPage({
-	params
-}: {
-	params: { id: string }
-}) {
-	const resolved = await params
-	const { product, similarProducts } = await getProducts(resolved)
-
+export default async function ProductPage(props: PageProps) {
+	const resolved = await props.params
 	const id = resolved.id
+  const { product, similarProducts } = await getProducts(resolved)
 
 	return (
 		<Product
