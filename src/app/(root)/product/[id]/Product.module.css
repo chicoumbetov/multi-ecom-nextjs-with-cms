@@ -1,3 +1,44 @@
-@reference "tailwindcss"
+.product_page {
+    /* @apply mx-auto max-w-7xl; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* max-w-7xl (1280px) */
+}
 
-.product_page{@apply mx-auto max-w-7xl;>.content{@apply space-y-7 px-4 py-10 sm:px-6 lg:px-8}>.content>.blocks{@apply lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8}}
+.product_page > .content {
+    /* @apply space-y-7 px-4 py-10 sm:px-6 lg:px-8; */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 2.5rem; /* py-10 */
+    padding-bottom: 2.5rem; /* py-10 */
+    /* space-y-7 equivalent: */
+}
+
+/* This rule handles the space-y-7 vertical spacing */
+.product_page > .content > * + * {
+    margin-top: 1.75rem; /* 1.75rem = space-y-7 */
+}
+
+/* Small devices (sm) */
+@media (min-width: 640px) {
+    .product_page > .content {
+        padding-left: 1.5rem; /* sm:px-6 */
+        padding-right: 1.5rem; /* sm:px-6 */
+    }
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+    .product_page > .content {
+        padding-left: 2rem; /* lg:px-8 */
+        padding-right: 2rem; /* lg:px-8 */
+    }
+
+    .product_page > .content > .blocks {
+        /* @apply lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8; */
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+        align-items: flex-start; /* lg:items-start */
+        column-gap: 2rem; /* lg:gap-x-8 */
+    }
+}
