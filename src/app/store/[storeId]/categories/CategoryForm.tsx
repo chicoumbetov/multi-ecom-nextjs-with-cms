@@ -13,7 +13,7 @@ import { Heading } from '@/presentation/components/ui/Heading'
 import { ConfirmModal } from '@/presentation/components/ui/modals/ConfirmModal'
 import { Textarea } from '@/presentation/components/ui/Textarea'
 import { ICategory, ICategoryInput } from '@/shared/domain/entities/category.interface'
-import styles from '../Store.module.scss'
+import styles from '../Store.module.css'
 
 interface ICategoryForm {
 	category?: ICategory | null
