@@ -8,7 +8,7 @@ import { STORE_URL } from '@/config/url.config'
 
 import { formatDate } from '@/utils/date/format-date'
 
-import styles from '../Store.module.scss'
+import styles from '../Store.module.css'
 
 import { useGetCategories } from '@/application/hooks/queries/categories/useGetCategories'
 import { Button } from '@/presentation/components/ui/Button'
