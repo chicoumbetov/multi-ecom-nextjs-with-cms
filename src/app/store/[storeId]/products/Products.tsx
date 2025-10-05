@@ -9,7 +9,7 @@ import { STORE_URL } from '@/config/url.config'
 
 import { formatPrice } from '@/utils/string/format-price'
 
-import styles from '../Store.module.scss'
+import styles from '../Store.module.css'
 
 import { useGetProducts } from '@/application/hooks/queries/products/useGetProducts'
 import { Button } from '@/presentation/components/ui/Button'

@@ -1,1 +1,69 @@
-.wrapper{@apply p-6}.wrapper>.header{@apply flex items-center justify-between}.wrapper>.header>.buttons{@apply flex items-center gap-x-4}.wrapper>.header>.buttons svg{@apply size-4 mr-2}.wrapper>.table{@apply mt-3}.wrapper form{@apply space-y-6 h-full}.wrapper form>.fields{@apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4}
+.wrapper {
+    /* @apply p-6; */
+    padding: 1.5rem; /* Equivalent to p-6 (padding: 1.5rem) */
+}
+
+.wrapper > .header {
+    /* @apply flex items-center justify-between; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper > .header > .buttons {
+    /* @apply flex items-center gap-x-4; */
+    display: flex;
+    align-items: center;
+    column-gap: 1rem; /* Equivalent to gap-x-4 (1rem) */
+}
+
+.wrapper > .header > .buttons svg {
+    /* @apply size-4 mr-2; */
+    width: 1rem; /* Equivalent to size-4 (width and height: 1rem) */
+    height: 1rem;
+    margin-right: 0.5rem; /* Equivalent to mr-2 (0.5rem) */
+}
+
+.wrapper > .table {
+    /* @apply mt-3; */
+    margin-top: 0.75rem; /* Equivalent to mt-3 (margin-top: 0.75rem) */
+}
+
+.wrapper form {
+    /* @apply space-y-6 h-full; */
+    display: flex; /* Often needed for space-y- utilities to work on direct children */
+    flex-direction: column; /* Often needed for space-y- utilities */
+    row-gap: 1.5rem; /* Equivalent to space-y-6 (1.5rem) on direct children */
+    height: 100%;
+}
+
+.wrapper form > .fields {
+    /* @apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4; */
+    display: grid;
+    gap: 1rem; /* Equivalent to gap-4 (1rem) */
+    margin-top: 1rem; /* Equivalent to mt-4 (1rem) */
+}
+
+/* --- Media Queries for Responsive Grid Columns --- */
+
+/* sm:grid-cols-2 (For screens >= 640px) */
+@media (min-width: 640px) {
+    .wrapper form > .fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* md:grid-cols-2 (For screens >= 768px) */
+/* This is redundant as sm:grid-cols-2 covers it, but included for completeness if there were a conflict */
+@media (min-width: 768px) {
+    .wrapper form > .fields {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* lg:grid-cols-3 (For screens >= 1024px) */
+@media (min-width: 1024px) {
+    .wrapper form > .fields {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

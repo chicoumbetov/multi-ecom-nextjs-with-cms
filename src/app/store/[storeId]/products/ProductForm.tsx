@@ -10,12 +10,13 @@ import { ImageUpload } from '@/presentation/components/ui/form-elements/image-up
 import { Input } from '@/presentation/components/ui/form-elements/Input'
 import { Heading } from '@/presentation/components/ui/Heading'
 import { ConfirmModal } from '@/presentation/components/ui/modals/ConfirmModal'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/presentation/components/ui/select'
+
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/presentation/components/ui/Select'
 import { Textarea } from '@/presentation/components/ui/Textarea'
 import { ICategory } from '@/shared/domain/entities/category.interface'
 import { IColor } from '@/shared/domain/entities/color.interface'
 import { IProduct, IProductInput } from '@/shared/domain/entities/product.interface'
-import styles from '../Store.module.scss'
+import styles from '../Store.module.css'
 
 interface ProductFormProps {
 	product?: IProduct
