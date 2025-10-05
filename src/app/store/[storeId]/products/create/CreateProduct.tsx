@@ -1,8 +1,7 @@
 'use client'
 
-import { useGetCategories } from '@/hooks/queries/categories/useGetCategories'
-import { useGetColors } from '@/hooks/queries/colors/useGetColors'
-
+import { useGetCategories } from '@/application/hooks/queries/categories/useGetCategories'
+import { useGetColors } from '@/application/hooks/queries/colors/useGetColors'
 import { ProductForm } from '../ProductForm'
 
 export function CreateProduct() {
