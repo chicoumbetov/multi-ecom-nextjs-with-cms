@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .header_menu
+ *  Selector: .header_menu
  * Tailwind: hidden items-center gap-x-2 ml-auto lg:flex
  */
 .header_menu {
@@ -16,7 +16,7 @@
 }
 
 /*
- * SCSS Selector: .header_menu .avatar
+ *  Selector: .header_menu .avatar
  * Tailwind: rounded-full
  */
 .header_menu .avatar {
@@ -24,7 +24,7 @@
 }
 
 /*
- * SCSS Selector: .header_menu .icon
+ *  Selector: .header_menu .icon
  * Tailwind: size-4 mr-2
  */
 .header_menu .icon {

@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .header
+ *  Selector: .header
  * Tailwind: p-6 gap-x-4 h-full flex items-center bg-white border-b
  */
 .header {
@@ -15,7 +15,7 @@
 }
 
 /*
- * SCSS Selector: .header > .header_menu
+ *  Selector: .header > .header_menu
  * Tailwind: flex items-center gap-x-4 ml-auto
  */
 .header > .header_menu {
@@ -26,7 +26,7 @@
 }
 
 /*
- * SCSS Selector: .header > .header_menu img
+ *  Selector: .header > .header_menu img
  * Tailwind: rounded-full
  */
 .header > .header_menu img {

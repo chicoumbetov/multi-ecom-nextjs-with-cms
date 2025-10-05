@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .cart
+ *  Selector: .cart
  * Tailwind: h-full flex flex-col
  */
 .cart {
@@ -9,7 +9,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items
+ *  Selector: .cart .items
  * Tailwind: flex flex-col w-full flex-1
  */
 .cart .items {
@@ -20,7 +20,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item
+ *  Selector: .cart .items > .item
  * Tailwind: flex items-center mb-5
  */
 .cart .items > .item {
@@ -30,7 +30,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .image
+ *  Selector: .cart .items > .item > .image
  * Tailwind: relative h-28 w-28 rounded-md overflow-hidden
  */
 .cart .items > .item > .image {
@@ -42,7 +42,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .image > img
+ *  Selector: .cart .items > .item > .image > img
  * Tailwind: object-cover
  */
 .cart .items > .item > .image > img {
@@ -50,7 +50,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right
+ *  Selector: .cart .items > .item > .right
  * Tailwind: ml-6
  */
 .cart .items > .item > .right {
@@ -58,7 +58,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right > h2
+ *  Selector: .cart .items > .item > .right > h2
  * Tailwind: font-medium line-clamp-1
  */
 .cart .items > .item > .right > h2 {
@@ -71,7 +71,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right > p
+ *  Selector: .cart .items > .item > .right > p
  * Tailwind: text-sm text-muted-foreground mt-1
  */
 .cart .items > .item > .right > p {
@@ -82,7 +82,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right .actions
+ *  Selector: .cart .items > .item > .right .actions
  * Tailwind: flex items-center mt-1
  */
 .cart .items > .item > .right .actions {
@@ -92,7 +92,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right .actions input
+ *  Selector: .cart .items > .item > .right .actions input
  * Tailwind: w-10 text-center text-sm
  */
 .cart .items > .item > .right .actions input {
@@ -103,7 +103,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right .actions button
+ *  Selector: .cart .items > .item > .right .actions button
  * Tailwind: size-7
  */
 .cart .items > .item > .right .actions button {
@@ -112,7 +112,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .item > .right .actions button svg
+ *  Selector: .cart .items > .item > .right .actions button svg
  * Tailwind: size-4
  */
 .cart .items > .item > .right .actions button svg {
@@ -121,7 +121,7 @@
 }
 
 /*
- * SCSS Selector: .cart .items > .not_found
+ *  Selector: .cart .items > .not_found
  * Tailwind: text-sm text-muted-foreground
  */
 .cart .items > .not_found {
@@ -131,7 +131,7 @@
 }
 
 /*
- * SCSS Selector: .cart > .total
+ *  Selector: .cart > .total
  * Tailwind: text-lg font-medium
  */
 .cart > .total {
@@ -141,7 +141,7 @@
 }
 
 /*
- * SCSS Selector: .cart > button
+ *  Selector: .cart > button
  * Tailwind: w-full
  */
 .cart > button {

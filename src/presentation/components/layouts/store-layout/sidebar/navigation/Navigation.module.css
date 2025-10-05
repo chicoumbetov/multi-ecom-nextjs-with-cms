@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .wrapper
+ *  Selector: .wrapper
  * Tailwind: flex flex-col w-full flex-1 mt-6
  */
 .wrapper {
@@ -11,7 +11,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .navigation
+ *  Selector: .wrapper > .navigation
  * Tailwind: flex flex-col w-full space-y-3
  */
 .wrapper > .navigation {
@@ -27,7 +27,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .navigation .route
+ *  Selector: .wrapper > .navigation .route
  * Tailwind: flex items-center gap-x-3 text-slate-500 text-sm font-medium py-2.5 px-3 rounded-lg hover:bg-blue-200/20 hover:text-blue-500 hover:drop-shadow-sm bg-transparent transition-all duration-200
  */
 .wrapper > .navigation .route {
@@ -59,7 +59,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .navigation .route > svg
+ *  Selector: .wrapper > .navigation .route > svg
  * Tailwind: size-5
  */
 .wrapper > .navigation .route > svg {
@@ -68,7 +68,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .navigation .route.active
+ *  Selector: .wrapper > .navigation .route.active
  * Tailwind: text-sm text-blue-500 bg-blue-200/20 hover:bg-blue-200/20 hover:text-blue-500
  * Note: The hover styles here are redundant as they match the active state,
  * but they are included for literal conversion.

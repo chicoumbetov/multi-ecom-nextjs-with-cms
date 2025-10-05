@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .wrapper
+ *  Selector: .wrapper
  * Tailwind: flex flex-col h-full
  */
 .wrapper {
@@ -9,7 +9,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .layout
+ *  Selector: .wrapper > .layout
  * Tailwind: flex-1
  */
 .wrapper > .layout {
@@ -17,7 +17,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .layout > main
+ *  Selector: .wrapper > .layout > main
  * Tailwind: mx-5 lg:mx-14
  */
 .wrapper > .layout > main {

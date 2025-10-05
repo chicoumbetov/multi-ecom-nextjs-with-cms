@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .wrapper
+ *  Selector: .wrapper
  * Tailwind: border-t mt-16
  */
 .wrapper {
@@ -12,7 +12,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .footer
+ *  Selector: .wrapper > .footer
  * Tailwind: mx-auto py-5 text-center
  */
 .wrapper > .footer {

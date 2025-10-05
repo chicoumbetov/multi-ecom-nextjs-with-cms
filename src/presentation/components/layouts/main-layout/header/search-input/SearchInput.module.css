@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .form
+ *  Selector: .form
  * Tailwind: flex items-center relative
  */
 .form {
@@ -9,7 +9,7 @@
 }
 
 /*
- * SCSS Selector: .form input
+ *  Selector: .form input
  * Tailwind: rounded-lg rounded-r-none focus-visible:ring-transparent pr-8
  */
 .form input {
@@ -26,7 +26,7 @@
 
 
 /*
- * SCSS Selector: .form button
+ *  Selector: .form button
  * Tailwind: rounded-l-none
  */
 .form button {
@@ -35,7 +35,7 @@
 }
 
 /*
- * SCSS Selector: .form button > svg
+ *  Selector: .form button > svg
  * Tailwind: size-4
  */
 .form button > svg {

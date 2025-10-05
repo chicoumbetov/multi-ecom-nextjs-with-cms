@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .wrapper
+ *  Selector: .wrapper
  * Tailwind: flex flex-col w-full
  */
 .wrapper {
@@ -9,7 +9,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .layout > .header
+ *  Selector: .wrapper > .layout > .header
  * Tailwind: h-[70px] lg:pl-64 fixed inset-y-0 w-full z-[49]
  */
 .wrapper > .layout > .header {
@@ -28,7 +28,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .layout > .sidebar
+ *  Selector: .wrapper > .layout > .sidebar
  * Tailwind: hidden lg:flex h-full w-64 flex-col fixed inset-y-0 z-[50]
  */
 .wrapper > .layout > .sidebar {
@@ -49,7 +49,7 @@
 }
 
 /*
- * SCSS Selector: .wrapper > .layout > main
+ *  Selector: .wrapper > .layout > main
  * Tailwind: lg:pl-64 py-[70px] bg-white
  */
 .wrapper > .layout > main {

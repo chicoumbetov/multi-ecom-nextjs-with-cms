@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .search
+ *  Selector: .search
  * Tailwind: flex items-center py-4
  */
 .search {
@@ -10,7 +10,7 @@
 }
 
 /*
- * SCSS Selector: .table
+ *  Selector: .table
  * Tailwind: rounded-md border
  */
 .table {
@@ -20,7 +20,7 @@
 }
 
 /*
- * SCSS Selector: .loading
+ *  Selector: .loading
  * Tailwind: max-w-screen-2xl mx-auto w-full
  */
 .loading {
@@ -31,7 +31,7 @@
 }
 
 /*
- * SCSS Selector: .loading > .heading
+ *  Selector: .loading > .heading
  * Tailwind: h-8 w-48
  */
 .loading > .heading {
@@ -40,7 +40,7 @@
 }
 
 /*
- * SCSS Selector: .loading > .search
+ *  Selector: .loading > .search
  * Tailwind: h-8 w-72 mt-6
  */
 .loading > .search {
@@ -50,7 +50,7 @@
 }
 
 /*
- * SCSS Selector: .loading > .table
+ *  Selector: .loading > .table
  * Tailwind: mt-6
  */
 .loading > .table {
@@ -58,7 +58,7 @@
 }
 
 /*
- * SCSS Selector: .loading > .table .loader_wrapper
+ *  Selector: .loading > .table .loader_wrapper
  * Tailwind: h-[520px] w-full flex items-center justify-center
  */
 .loading > .table .loader_wrapper {

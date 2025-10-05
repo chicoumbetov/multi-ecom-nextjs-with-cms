@@ -1,42 +1,31 @@
-/*
- * SCSS Selector: .wrapper
- * Tailwind: min-h-screen grid grid-cols-1 lg:grid-cols-2
- */
 .wrapper {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+    grid-template-columns: 1fr; /* grid-cols-1 */
 }
 
+/* Equivalent to lg:grid-cols-2 */
 @media (min-width: 1024px) {
     .wrapper {
-        grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/*
- * SCSS Selector: .wrapper > .left
- * Tailwind: h-full bg-blue-600 hidden lg:flex items-center justify-center
- */
 .wrapper > .left {
     height: 100%;
-    --tw-bg-opacity: 1;
-    background-color: rgb(37 99 235 / var(--tw-bg-opacity)); /* bg-blue-600 */
+    background-color: #2563eb; /* bg-blue-600 */
     display: none; /* hidden */
+    align-items: center;
+    justify-content: center;
 }
 
+/* Equivalent to lg:flex */
 @media (min-width: 1024px) {
     .wrapper > .left {
-        display: flex; /* lg:flex */
-        align-items: center;
-        justify-content: center;
+        display: flex;
     }
 }
 
-/*
- * SCSS Selector: .wrapper > .right
- * Tailwind: h-full flex flex-col items-center justify-center
- */
 .wrapper > .right {
     height: 100%;
     display: flex;
@@ -45,12 +34,8 @@
     justify-content: center;
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card
- * Tailwind: border-none p-6 flex flex-col items-center justify-center w-[380px]
- */
 .wrapper > .right > .card {
-    border-style: none; /* border-none */
+    border: none; /* border-none */
     padding: 1.5rem; /* p-6 */
     display: flex;
     flex-direction: column;
@@ -59,107 +44,59 @@
     width: 380px; /* w-[380px] */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .header
- * Tailwind: text-center pb-5
- */
 .wrapper > .right > .card > .header {
     text-align: center;
-    padding-bottom: 1.25rem; /* pb-5 */
+    padding-bottom: 1.25rem; /* pb-5 (5 * 0.25rem = 1.25rem) */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .header > h3
- * Tailwind: pb-1 text-3xl font-bold
- */
 .wrapper > .right > .card > .header > h3 {
     padding-bottom: 0.25rem; /* pb-1 */
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 700;
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content
- * Tailwind: p-0 w-full
- */
 .wrapper > .right > .card > .content {
     padding: 0;
     width: 100%;
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content form
- * Tailwind: space-y-5
- */
 .wrapper > .right > .card > .content form {
-    /* space-y-5: margin-top on all children except the first */
-}
-.wrapper > .right > .card > .content form > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse))); /* space-y-5 */
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse)); /* space-y-5 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* space-y-5 (5 * 0.25rem = 1.25rem) */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content form button
- * Tailwind: w-full
- */
 .wrapper > .right > .card > .content form button {
     width: 100%;
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content > .social
- * Tailwind: space-y-3 w-full mt-5
- */
 .wrapper > .right > .card > .content > .social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 (3 * 0.25rem = 0.75rem) */
     width: 100%;
     margin-top: 1.25rem; /* mt-5 */
-    /* space-y-3: margin-top on all children except the first */
-}
-.wrapper > .right > .card > .content > .social > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse))); /* space-y-3 */
-    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse)); /* space-y-3 */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content > .social > button
- * Tailwind: w-full
- */
 .wrapper > .right > .card > .content > .social > button {
     width: 100%;
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .content > .social > button > svg
- * Tailwind: size-5 mr-2
- */
 .wrapper > .right > .card > .content > .social > button > svg {
-    width: 1.25rem;
+    width: 1.25rem; /* size-5 */
     height: 1.25rem; /* size-5 */
     margin-right: 0.5rem; /* mr-2 */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .footer
- * Tailwind: p-0 mt-4 text-sm text-muted-foreground
- */
 .wrapper > .right > .card > .footer {
     padding: 0;
     margin-top: 1rem; /* mt-4 */
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    /* text-muted-foreground color would depend on your Tailwind theme */
+    font-size: 0.875rem; /* text-sm */
+    /* text-muted-foreground: This depends on your specific CSS/design system variable for muted-foreground */
+    color: #6b7280; /* A common gray for muted text, adjust as needed */
 }
 
-/*
- * SCSS Selector: .wrapper > .right > .card > .footer > button
- * Tailwind: ml-1 text-sky-600
- */
 .wrapper > .right > .card > .footer > button {
     margin-left: 0.25rem; /* ml-1 */
-    --tw-text-opacity: 1;
-    color: rgb(2 132 199 / var(--tw-text-opacity)); /* text-sky-600 */
+    color: #0284c7; /* text-sky-600 */
 }

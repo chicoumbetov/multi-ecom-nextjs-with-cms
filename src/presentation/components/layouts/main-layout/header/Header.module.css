@@ -1,5 +1,5 @@
 /*
- * SCSS Selector: .header
+ *  Selector: .header
  * Tailwind: p-5 gap-x-4 h-full flex items-center bg-white border-b
  */
 .header {
@@ -15,7 +15,7 @@
 }
 
 /*
- * SCSS Selector: .header > .search
+ *  Selector: .header > .search
  * Tailwind: ml-auto hidden w-[40%] lg:block
  */
 .header > .search {
