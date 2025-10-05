@@ -1,4 +1,5 @@
 import { productService } from "@/services/product.service";
+import { IProduct } from "@/shared/domain/entities/product.interface";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PageProps } from "../../../../../.next/types/app/layout";
@@ -6,16 +7,44 @@ import { Product } from "./Product";
 
 export const revalidate = 60
 
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 export async function generateStaticParams() {
-	const products = await productService.getAll()
+  const MAX_RETRIES = 3;
+  let products: IProduct[] = [];
+  
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      console.log(`Attempting to fetch products (Attempt ${attempt})...`);
+      products = await productService.getAll();
+      
+      // If successful, break the loop
+      break; 
+      
+    } catch (error) {
+      console.error(`Fetch attempt ${attempt} failed with error: ${error?.toString()}`);
+      
+      // If it's the last attempt, re-throw the error to halt the build
+      if (attempt === MAX_RETRIES) {
+        throw new Error("Failed to fetch products after multiple retries. Halting build.");
+      }
+      
+      // Wait before the next retry (exponential backoff is often better, but a fixed delay works too)
+      await delay(2000 * attempt); // Wait 2s, 4s, etc.
+    }
+  }
 
-	const paths = products.map(product => {
-		return {
-			params: { id: product.id }
-		}
-	})
+  if (!products || products.length === 0) {
+      throw new Error("generateStaticParams retrieved no products or failed all retries.");
+  }
+  
+  const paths = products.map(product => {
+    return {
+      params: { id: product.id }
+    }
+  })
 
-	return paths
+  return paths
 }
 
 async function getProducts(params: { id: string }) {
