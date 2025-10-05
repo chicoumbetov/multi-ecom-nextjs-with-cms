@@ -6,17 +6,22 @@ import { IProduct, IProductInput } from '@/shared/domain/entities/product.interf
 
 class ProductService {
 	async getAll(searchTerm?: string | null) {
-		const { data } = await axiosClassic<IProduct[]>({
-			url: API_URL.products(),
-			method: 'GET',
-			params: searchTerm
-				? {
-						searchTerm
-					}
-				: {}
-		})
+		try {
+            const { data } = await axiosClassic<IProduct[]>({
+                url: API_URL.products(),
+                method: 'GET',
+                params: searchTerm
+                    ? {
+                            searchTerm
+                        }
+                    : {}
+            })
 
-		return data || []
+            return data || []
+        } catch (error) {
+            console.error('ProductService.getAll failed during build/runtime. Returning empty array.', error)
+            return [] as IProduct[]
+        }
 	}
 
 	async getByStoreId(id: string) {
