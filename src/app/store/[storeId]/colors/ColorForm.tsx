@@ -1,26 +1,16 @@
 import { Trash } from 'lucide-react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import { Button } from '@/components/ui/Button'
-import { Heading } from '@/components/ui/Heading'
-import {
-	Form,
-	FormControl,
-	FormField,
-	FormItem,
-	FormLabel,
-	FormMessage
-} from '@/components/ui/form-elements/Form'
-import { Input } from '@/components/ui/form-elements/Input'
-import { ConfirmModal } from '@/components/ui/modals/ConfirmModal'
-
-import { useCreateColor } from '@/hooks/queries/colors/useCreateColor'
-import { useDeleteColor } from '@/hooks/queries/colors/useDeleteColor'
-import { useUpdateColor } from '@/hooks/queries/colors/useUpdateColor'
-
-import { IColor, IColorInput } from '@/shared/types/color.interface'
-
-import styles from '../Store.module.scss'
+import { useCreateColor } from '@/application/hooks/queries/colors/useCreateColor'
+import { useDeleteColor } from '@/application/hooks/queries/colors/useDeleteColor'
+import { useUpdateColor } from '@/application/hooks/queries/colors/useUpdateColor'
+import { Button } from '@/presentation/components/ui/Button'
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/presentation/components/ui/form-elements/Form'
+import { Input } from '@/presentation/components/ui/form-elements/Input'
+import { Heading } from '@/presentation/components/ui/Heading'
+import { ConfirmModal } from '@/presentation/components/ui/modals/ConfirmModal'
+import { IColor, IColorInput } from '@/shared/domain/entities/color.interface'
+import styles from '../Store.module.css'
 
 interface ColorFormProps {
 	color?: IColor
@@ -42,10 +32,12 @@ export function ColorForm({ color }: ColorFormProps) {
 		values: {
 			name: color?.name || '',
 			value: color?.value || ''
-		} || {
+		}
+		/* || {
 			name: '',
 			value: ''
 		}
+			*/
 	})
 
 	const onSubmit: SubmitHandler<IColorInput> = data => {
