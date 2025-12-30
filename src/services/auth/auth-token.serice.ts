@@ -15,8 +15,6 @@ export const saveTokenStorage = (accessToken: string) => {
 	
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, {
 		domain: process.env.APP_DOMAIN,
-		// Remove or comment out domain for a test deploy
-        // domain: process.env.APP_DOMAIN,
 		sameSite: 'strict',
 		secure: true,
 		expires: 1

@@ -4,7 +4,6 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 import { DASHBOARD_URL } from '@/config/url.config'
-
 import { authService } from '@/services/auth/auth.service'
 
 import { IAuthForm } from '@/shared/domain/entities/auth.interface'
@@ -23,9 +22,7 @@ export function useAuthForm(isReg: boolean) {
 		onSuccess() {
 			form.reset()
 			toast.success('Successfull authorization')
-			console.log('DASHBOARD_URL :',  DASHBOARD_URL, "DASHBOARD_URL.home()", DASHBOARD_URL.home());
-			
-			router.replace('/') // DASHBOARD_URL.home())
+			router.replace(DASHBOARD_URL.home())
 		},
 		onError(error) {
 			if (error.message) {
