@@ -19,6 +19,7 @@ export function HeaderMenu() {
 	const { user, isLoading } = useProfile()
 
 	return (
+		<>
 		<div className={styles.header_menu}>
 			<HeaderCart />
 			<Link href={PUBLIC_URL.explorer()}>
@@ -26,7 +27,7 @@ export function HeaderMenu() {
 			</Link>
 			{isLoading ? (
 				<Loader size='sm' />
-			) : user ? (
+			) : user && (
 				<>
 					<Link href={DASHBOARD_URL.favorites()}>
 						<Button variant='ghost'>Избранное</Button>
@@ -40,24 +41,33 @@ export function HeaderMenu() {
 							<Button variant='ghost'>Создать магазин</Button>
 						</CreateStoreModal>
 					)}
-					<Link href={DASHBOARD_URL.home()}>
-						<Image
-							src={user.picture}
-							alt={user.name}
-							width={42}
-							height={42}
-							className={styles.avatar}
-						/>
-					</Link>
+					
 				</>
-			) : (
+			) }
+		</div>
+		<div className={styles.header_menu_signin}>
+		{
+			user ? (
+				<Link href={DASHBOARD_URL.home()}>
+				<Image
+					src={user.picture}
+					alt={user.name}
+					width={42}
+					height={42}
+					className={styles.avatar}
+				/>
+			</Link>
+			)
+			: (
 				<Link href={PUBLIC_URL.auth()}>
 					<Button variant='primary'>
 						<LogOut className={styles.icon} />
-						Войти
+						Sign In{/*Войти*/}
 					</Button>
 				</Link>
-			)}
+			)
+		}
 		</div>
+		</>
 	)
 }

@@ -9,6 +9,12 @@
     margin-left: auto; /* ml-auto */
 }
 
+.header_menu_signin {
+    align-items: center;
+    column-gap: 0.5rem; /* gap-x-2 */
+    margin-left: auto; /* ml-auto */
+}
+
 @media (min-width: 1024px) {
     .header_menu {
         display: flex; /* lg:flex */
