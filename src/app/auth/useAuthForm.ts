@@ -23,9 +23,9 @@ export function useAuthForm(isReg: boolean) {
 		onSuccess() {
 			form.reset()
 			toast.success('Successfull authorization')
-			console.log('DASHBOARD_URL :',  DASHBOARD_URL);
+			console.log('DASHBOARD_URL :',  DASHBOARD_URL, "DASHBOARD_URL.home()", DASHBOARD_URL.home());
 			
-			router.replace('/dashboard') // DASHBOARD_URL.home())
+			router.replace('/') // DASHBOARD_URL.home())
 		},
 		onError(error) {
 			if (error.message) {
