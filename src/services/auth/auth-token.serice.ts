@@ -18,7 +18,8 @@ export const saveTokenStorage = (accessToken: string) => {
     }
 
 	if (process.env.APP_DOMAIN) {
-        options.domain = process.env.APP_DOMAIN
+		console.log('process.env.APP_DOMAIN :', process.env.APP_DOMAIN)
+        // options.domain = process.env.APP_DOMAIN
     }
 
 	Cookies.set(EnumTokens.ACCESS_TOKEN, accessToken, options)
